@@ -24,11 +24,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          # Removed 'cache: 'npm'' to prevent 'lock file not found' error
       - name: Install dependencies
-        # IMPORTANT: This step still requires you to commit and push 
-        # your 'package-lock.json' file locally before running the workflow.
-        run: npm ci
+        # CHANGED: Switched from 'npm ci' to 'npm install'
+        # 'npm install' can generate a lock file if one is missing.
+        run: npm install 
       - name: Build
         run: npm run build
       - name: Upload artifact
@@ -45,4 +44,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
