@@ -24,8 +24,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: 'npm'
+          # REMOVED: cache: 'npm' to avoid the lock file error
       - name: Install dependencies
+        # 'npm ci' requires package-lock.json to be checked in
         run: npm ci
       - name: Build
         run: npm run build
