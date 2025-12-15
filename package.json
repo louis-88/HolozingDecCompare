@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://louis88.github.io/holozing-dust-compare",
+  "homepage": "https://louis-88.github.io/HolozingDecCompare/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
