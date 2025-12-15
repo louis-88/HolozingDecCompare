@@ -34,31 +34,12 @@ A modern, dark-themed frontend tool designed for the HoloZing community to track
 
 ## 🛠️ Tech Stack
 
-- **Framework**: React 18
+- **Framework**: React 19
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Charts**: Recharts
 - **Icons**: Lucide React
-- **Build Tool**: Vite
 - **API**: HoloZing History API (proxied for CORS support)
-
-## 📦 How to Deploy to GitHub Pages
-
-This project is configured to deploy manually to GitHub Pages using `gh-pages`.
-
-1.  **Install Dependencies**:
-    ```bash
-    npm install
-    ```
-
-2.  **Deploy**:
-    ```bash
-    npm run deploy
-    ```
-    This command will run the build process and automatically push the output to the `gh-pages` branch of your repository.
-
-3.  **Configure GitHub Settings**:
-    Go to your repository Settings > Pages > Build and deployment > Source, and ensure it is set to "Deploy from a branch" and select `gh-pages` / `root`.
 
 ## 🤝 Credits
 
