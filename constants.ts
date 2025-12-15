@@ -1,4 +1,4 @@
-export const API_BASE_URL = 'https://api.holozing.com/history/2025/bonus';
+export const API_BASE_URL = 'https://api-public.holozing.com/history/2025/bonus';
 
 // Colors for visualizations
 export const PLAYER_COLORS = [
